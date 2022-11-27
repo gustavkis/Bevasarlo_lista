@@ -36,9 +36,45 @@
                 <label for="nev">Tétel neve</label>
                 <input type="text" class="form-control" id="nev" />
               </div>
-              
+              <div class="col-auto">
+                <label for="darabSzan">Darabszám (db)</label>
+                <input type="number" class="form-control" id="darabSzam" />
+              </div>
+                <div class="col-auto">
+                <label for="tetelAra">Tétel/db ár (Ft)</label>
+                <input type="number" class="form-control" id="tetelAra" />
+              </div>
             </form>
+
+            <!-- gombok hozzádása, hozzáad, töröl, +funkció-->
+
+            <div class="d-grid gap-2 p-5">
+                <button
+                  type="button"
+                  onclick="osszead()"
+                  class="btn btn-primary btn-lg"
+                >
+                  Hozzáad
+                </button>
+              </div>
+    
+              <div class="d-grid gap-2 p-5">
+                <button
+                  type="button"
+                  onclick="torol()"
+                  class="btn btn-danger btn-lg"
+                >
+                  Lista törlése
+                </button>
+              </div>
       </div>
+
+      
+
+
+
+
+      
     </div>
 
     <script src="/script.js"></script>
