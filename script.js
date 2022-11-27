@@ -17,6 +17,13 @@ function osszead() {
   console.log(osszesen);
 }
 
+function torol() {
+    var mezok = document.getElementById("tab");
+    mezok.innerHTML = "";
+  
+    location.reload();
+  }
+
 function hozzaAd() {
   // Az értékek beolvasása html-ből
 
