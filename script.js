@@ -31,8 +31,35 @@ function hozzaAd() {
   const tetelSz = document.getElementById("darabSzam").value;
   const tetelA = document.getElementById("tetelAra").value;
 
-  // táblázat, táblázat sorainak kiírása, a bevitt értékekkel
 
+  // új tétel/név hozzáadása a listához
+
+  var ujLiNev = document.createElement("li");
+  var ujTetelNev = document.createTextNode(tetelN);
+  ujLiNev.appendChild(ujTetelNev);
+  const hovaUlNev = document.getElementById("ulNev");
+  hovaUlNev.appendChild(ujLiNev);
+  
+  // darabszám kiírása
+  var ujLiDarab = document.createElement("li");
+  var ujTetelDarab = document.createTextNode(tetelSz);
+  ujLiDarab.appendChild(ujTetelDarab);
+  const hovaUlDarab = document.getElementById("ulDarab");
+  hovaUlDarab.appendChild(ujLiDarab);
+  
+  // ár kiírása 
+  var ujLiAr = document.createElement("li");
+  var ujTetelAr = document.createTextNode(tetelA);
+  ujLiAr.appendChild(ujTetelAr);
+  const hovaUlAr = document.getElementById("ulAr");
+  hovaUlAr.appendChild(ujLiAr);
+
+
+
+
+
+  // táblázat, táblázat sorainak kiírása, a bevitt értékekkel
+/*
   var table = document.createElement("table");
   for (var i = 1; i < 2; i++) {
     var tr = document.createElement("tr");
@@ -54,7 +81,7 @@ function hozzaAd() {
 
     table.appendChild(tr);
     document.getElementById("tab").appendChild(table);
-  }
+  }*/
 
   // törlés gomb soronként - w3s szerint
   var szovegem = document.getElementsByTagName("tr");
