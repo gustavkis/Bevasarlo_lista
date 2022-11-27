@@ -31,50 +31,58 @@
       <div class="row">
         <!-- input mezők hozzádása, text, number-->
         <div class="col-6 border border-dark bg-light">
-            <form class="row gy-2 gx-0 p-5 align-items-center">
-              <div class="col-auto">
-                <label for="nev">Tétel neve</label>
-                <input type="text" class="form-control" id="nev" />
-              </div>
-              <div class="col-auto">
-                <label for="darabSzan">Darabszám (db)</label>
-                <input type="number" class="form-control" id="darabSzam" />
-              </div>
-                <div class="col-auto">
-                <label for="tetelAra">Tétel/db ár (Ft)</label>
-                <input type="number" class="form-control" id="tetelAra" />
-              </div>
-            </form>
+          <form class="row gy-2 gx-0 p-5 align-items-center">
+            <div class="col-auto">
+              <label for="nev">Tétel neve</label>
+              <input type="text" class="form-control" id="nev" />
+            </div>
+            <div class="col-auto">
+              <label for="darabSzan">Darabszám (db)</label>
+              <input type="number" class="form-control" id="darabSzam" />
+            </div>
+            <div class="col-auto">
+              <label for="tetelAra">Tétel/db ár (Ft)</label>
+              <input type="number" class="form-control" id="tetelAra" />
+            </div>
+          </form>
 
-            <!-- gombok hozzádása, hozzáad, töröl, +funkció-->
+          <!-- gombok hozzádása, hozzáad, töröl, +funkció-->
 
-            <div class="d-grid gap-2 p-5">
-                <button
-                  type="button"
-                  onclick="osszead()"
-                  class="btn btn-primary btn-lg"
-                >
-                  Hozzáad
-                </button>
-              </div>
-    
-              <div class="d-grid gap-2 p-5">
-                <button
-                  type="button"
-                  onclick="torol()"
-                  class="btn btn-danger btn-lg"
-                >
-                  Lista törlése
-                </button>
-              </div>
+          <div class="d-grid gap-2 p-5">
+            <button
+              type="button"
+              onclick="osszead()"
+              class="btn btn-primary btn-lg"
+            >
+              Hozzáad
+            </button>
+          </div>
+
+          <div class="d-grid gap-2 p-5">
+            <button
+              type="button"
+              onclick="torol()"
+              class="btn btn-danger btn-lg"
+            >
+              Lista törlése
+            </button>
+          </div>
+        </div>
+
+        <table id="tab" class="table table-success table-striped">
+          <thead>
+            <th><h6>Tétel neve</h6></th>
+            <th><h6>Darabszám (db)</h6></th>
+            <th><h6>Tétel/db ár (Ft)</h6></th>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <td></td>
+            <td></td>
+            <td><h5 class="text-end" id="valami"></h5></td>
+          </tfoot>
+        </table>
       </div>
-
-      
-
-
-
-
-      
     </div>
 
     <script src="/script.js"></script>
