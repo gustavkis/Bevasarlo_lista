@@ -1,4 +1,20 @@
 
+//A tömb kialakítása
+
+function osszead() {
+    var tetelSzorzat = hozzaAd();
+    arak.push(tetelSzorzat);
+    var osszesen = 0;
+  
+    for (let i = 0; i < arak.length; i++) {
+      osszesen += arak[i];
+    }
+    document.getElementById("valami").innerHTML = "Összesen: " + osszesen + " Ft";
+  
+    console.log(arak);
+    console.log(tetelSzorzat);
+    console.log(osszesen);
+  }
 
 function hozzaAd() {
 
