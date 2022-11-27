@@ -18,7 +18,9 @@ function osszead() {
 }
 
 function torol() {
-  var mezok = document.getElementById("tab");
+  var mezok = document.getElementById("ulNev");
+  var mezok = document.getElementById("ulDarab");
+  var mezok = document.getElementById("ulAr");
   mezok.innerHTML = "";
 
   location.reload();
