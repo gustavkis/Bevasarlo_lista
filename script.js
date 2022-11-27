@@ -59,7 +59,7 @@ function hozzaAd() {
   }
 
 
-  // törlés soronként - w3s szerint
+  // törlés gomb soronként - w3s szerint
   var szovegem = document.getElementsByTagName("tr");
   var i;
   for (i = 0; i < szovegem.length; i++) {
@@ -68,6 +68,15 @@ function hozzaAd() {
     span.className = "close";
     span.appendChild(txt);
     szovegem[i].appendChild(span);
+  }
+  // a gomb megnyomása eltünteti a sort
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      var div = this.parentElement;
+      div.style.display = "none";
+    };
   }
 
   // darab és ár szorzata, vagyis egy tétel ára
