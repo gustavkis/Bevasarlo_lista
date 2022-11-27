@@ -86,7 +86,8 @@ function hozzaAd() {
   }*/
 
   // törlés gomb soronként - w3s szerint
-  var szovegem = document.getElementsByTagName("tr");
+
+  var szovegem = document.getElementsByTagName("li");
   var i;
   for (i = 0; i < szovegem.length; i++) {
     var span = document.createElement("span");
