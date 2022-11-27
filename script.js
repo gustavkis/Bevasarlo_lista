@@ -1,3 +1,4 @@
+var arak = [];
 
 //A tömb kialakítása
 
