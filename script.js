@@ -24,6 +24,8 @@ function torol() {
     location.reload();
   }
 
+
+
 function hozzaAd() {
   // Az értékek beolvasása html-ből
 
@@ -54,6 +56,18 @@ function hozzaAd() {
 
     table.appendChild(tr);
     document.getElementById("tab").appendChild(table);
+  }
+
+
+  // törlés soronként - w3s szerint
+  var szovegem = document.getElementsByTagName("tr");
+  var i;
+  for (i = 0; i < szovegem.length; i++) {
+    var span = document.createElement("span");
+    var txt = document.createElement("button");
+    span.className = "close";
+    span.appendChild(txt);
+    szovegem[i].appendChild(span);
   }
 
   // darab és ár szorzata, vagyis egy tétel ára
