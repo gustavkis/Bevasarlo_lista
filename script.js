@@ -3,32 +3,30 @@ var arak = [];
 //A tömb kialakítása
 
 function osszead() {
-    var tetelSzorzat = hozzaAd();
-    arak.push(tetelSzorzat);
-    var osszesen = 0;
-  
-    for (let i = 0; i < arak.length; i++) {
-      osszesen += arak[i];
-    }
-    document.getElementById("valami").innerHTML = "Összesen: " + osszesen + " Ft";
-  
-    console.log(arak);
-    console.log(tetelSzorzat);
-    console.log(osszesen);
+  var tetelSzorzat = hozzaAd();
+  arak.push(tetelSzorzat);
+  var osszesen = 0;
+
+  for (let i = 0; i < arak.length; i++) {
+    osszesen += arak[i];
   }
+  document.getElementById("valami").innerHTML = "Összesen: " + osszesen + " Ft";
+
+  console.log(arak);
+  console.log(tetelSzorzat);
+  console.log(osszesen);
+}
 
 function hozzaAd() {
+  // Az értékek beolvasása html-ből
 
-    // Az értékek beolvasása html-ből
+  const tetelN = document.getElementById("nev").value;
+  const tetelSz = document.getElementById("darabSzam").value;
+  const tetelA = document.getElementById("tetelAra").value;
 
-    const tetelN = document.getElementById("nev").value;
-    const tetelSz = document.getElementById("darabSzam").value;
-    const tetelA = document.getElementById("tetelAra").value;
+  // táblázat, táblázat sorainak kiírása, a bevitt értékekkel
 
-
-    // táblázat, táblázat sorainak kiírása, a bevitt értékekkel
-
-var table = document.createElement("table");
+  var table = document.createElement("table");
   for (var i = 1; i < 2; i++) {
     var tr = document.createElement("tr");
 
@@ -57,5 +55,4 @@ var table = document.createElement("table");
   if (szorzat != 0) {
     return szorzat;
   }
-
 }
