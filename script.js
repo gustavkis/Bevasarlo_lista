@@ -18,13 +18,11 @@ function osszead() {
 }
 
 function torol() {
-    var mezok = document.getElementById("tab");
-    mezok.innerHTML = "";
-  
-    location.reload();
-  }
+  var mezok = document.getElementById("tab");
+  mezok.innerHTML = "";
 
-
+  location.reload();
+}
 
 function hozzaAd() {
   // Az értékek beolvasása html-ből
@@ -57,7 +55,6 @@ function hozzaAd() {
     table.appendChild(tr);
     document.getElementById("tab").appendChild(table);
   }
-
 
   // törlés gomb soronként - w3s szerint
   var szovegem = document.getElementsByTagName("tr");
