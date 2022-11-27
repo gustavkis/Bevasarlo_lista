@@ -51,4 +51,11 @@ var table = document.createElement("table");
     document.getElementById("tab").appendChild(table);
   }
 
+  // darab és ár szorzata, vagyis egy tétel ára
+
+  var szorzat = tetelSz * tetelA;
+  if (szorzat != 0) {
+    return szorzat;
+  }
+
 }
